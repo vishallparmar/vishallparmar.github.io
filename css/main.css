@@ -1,0 +1,154 @@
+@CHARSET "ISO-8859-1";
+
+@font-face {
+	font-family: 'RobotoLight';
+	src: url('../font/MerriweatherSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Clemente';
+	src: url('../font/ClementePDae-Light.ttf') format('truetype');
+}
+
+body {
+	margin-bottom: 10px;
+	background-color: #f7f7f7 !important;
+}
+
+h5 {
+	font-size: 15px !important;
+}
+
+.social:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+
+.social {
+	-webkit-transform: scale(0.8);
+	/* Browser Variations: */
+	-moz-transform: scale(0.8);
+	-o-transform: scale(0.8);
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	color: #147FC1;
+}
+
+/*
+    Multicoloured Hover Variations
+*/
+#social-fb:hover {
+	color: #3B5998;
+}
+
+#social-tw:hover {
+	color: #4099FF;
+}
+
+#social-insta:hover {
+	color: #D22E8D;
+}
+
+#social-git:hover {
+	color: #000;
+}
+
+.leftAlign {
+	text-align: left;
+}
+
+.rightAlign {
+	text-align: right;
+}
+
+.divPad {
+	padding: 20px 10px 0px 10px !important;
+}
+
+.headerDiv {
+	background-color: #147FC1;
+}
+
+.quoteDiv {
+	text-align: center;
+	color: #f7f7f7 !important;
+	font-family: 'Clemente' !important;
+}
+
+.name {
+	font-weight: bold;
+	font-family: 'RobotoLight' !important;
+	margin: 4px 0px 2px 0px;
+}
+
+.designation {
+	font-family: 'RobotoLight' !important;
+	margin: 2px 0px 2px 0px;
+}
+
+.headerDiv {
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	color: #f7f7f7 !important;
+	font-family: 'RobotoLight' !important;
+	font-weight: normal;
+}
+
+.contentDiv {
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+	color: #444444 !important;
+	font-family: 'RobotoLight' !important;
+	font-weight: normal;
+	border-top: 5px solid #147FC1;
+	box-shadow: 0px 0px 2px 2px #e3e3e3;
+	background-color: #fff;
+}
+
+.contentTitle {
+	font-weight: bold;
+	color: #147FC1;
+}
+
+.item {
+	text-align: left !important;
+}
+
+.title {
+	font-weight: bold;
+}
+
+.leftPad {
+	padding-left: 23px;
+}
+
+.rightPad {
+	padding-right: 10px;
+}
+
+.checkMarks {
+	font-size: 15px;
+	color: #5CB85C;
+	margin-top: 10px !important;
+	font-weight: normal !important;
+}
+
+.lg-pad {
+	padding: 0px 120px 0px 120px;
+}
+
+@media ( max-width : 990px) {
+	.text-xs-center {
+		text-align: center !important;
+	}
+	.imageCenter {
+		display: block;
+		margin-right: auto;
+		margin-left: auto
+	}
+	.lg-pad {
+		padding: 0px !important;
+	}
+}
