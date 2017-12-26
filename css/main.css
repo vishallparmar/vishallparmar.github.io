@@ -2,12 +2,12 @@
 
 @font-face {
 	font-family: 'RobotoLight';
-	src: url('../font/Nunito-Regular.ttf') format('truetype');
+	src: url('../font/CrimsonText-Regular.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'Clemente';
-	src: url('../font/ClementePDae-Light.ttf') format('truetype');
+	src: url('../font/CrimsonText-Regular.ttf') format('truetype');
 }
 
 body {
