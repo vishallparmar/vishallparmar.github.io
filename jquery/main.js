@@ -29,7 +29,12 @@ $(document).ready(function() {
 		height : '10px',
 		radius : '10px'
 	});
-
+	$('#javaScriptBar').LineProgressbar({
+		percentage : 60,
+		height : '10px',
+		radius : '10px'
+	});
+	
 	var heights = $(".colequal").map(function() {
 		return $(this).height();
 	}).get(),
