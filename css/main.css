@@ -33,7 +33,7 @@ h5 {
 	-webkit-transition-duration: 0.5s;
 	-moz-transition-duration: 0.5s;
 	-o-transition-duration: 0.5s;
-	color: #147FC1;
+	color: #3C5998;
 }
 
 /*
@@ -68,7 +68,7 @@ h5 {
 }
 
 .headerDiv {
-	background-color: #147FC1;
+	background-color: #3C5998;
 }
 
 .quoteDiv {
@@ -102,14 +102,14 @@ h5 {
 	color: #444444 !important;
 	font-family: 'RobotoLight' !important;
 	font-weight: normal;
-	border-top: 5px solid #147FC1;
+	border-top: 5px solid #3C5998;
 	box-shadow: 0px 0px 2px 2px #e3e3e3;
 	background-color: #fff;
 }
 
 .contentTitle {
 	font-weight: bold;
-	color: #147FC1;
+	color: #3C5998;
 }
 
 .item {
