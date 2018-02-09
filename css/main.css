@@ -76,7 +76,7 @@ h5 {
 }
 
 .headerDiv2{
-	border: none;
+	border: none !important;
 }
 
 .quoteDiv {
