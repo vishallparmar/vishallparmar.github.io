@@ -2,39 +2,40 @@ $(document).ready(function() {
 	$('#htmlBar').LineProgressbar({
 		percentage : 80,
 		height : '10px',
-		radius : '0px'
+		radius : '0px',
+		fillBackgroundColor: '#444444'
 	});
 	$('#bootBar').LineProgressbar({
 		percentage : 75,
 		height : '10px',
-		radius : '0px'
+		radius : '0px',
+		fillBackgroundColor: '#444444'
 	});
 	$('#jqueryBar').LineProgressbar({
 		percentage : 65,
 		height : '10px',
-		radius : '0px'
+		radius : '0px',
+		fillBackgroundColor: '#444444'
 	});
 	$('#jsonBar').LineProgressbar({
 		percentage : 90,
 		height : '10px',
-		radius : '0px'
+		radius : '0px',
+		fillBackgroundColor: '#444444'
 	});
 	$('#javaCBar').LineProgressbar({
 		percentage : 60,
 		height : '10px',
-		radius : '0px'
+		radius : '0px',
+		fillBackgroundColor: '#444444'
 	});
 	$('#sqlBar').LineProgressbar({
 		percentage : 70,
 		height : '10px',
-		radius : '0px'
+		radius : '0px',
+		fillBackgroundColor: '#444444'
 	});
-	$('#javaScriptBar').LineProgressbar({
-		percentage : 60,
-		height : '10px',
-		radius : '0px'
-	});
-	
+
 	var heights = $(".colequal").map(function() {
 		return $(this).height();
 	}).get(),
