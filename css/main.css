@@ -104,6 +104,14 @@ h5 {
 	font-weight: normal;
 }
 
+.headerDiv2 {
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	color: #444444 !important;
+	font-family: 'RobotoLight' !important;
+	font-weight: normal;
+}
+
 .contentDiv {
 	padding: 10px 20px 10px 20px;
 	text-align: center;
