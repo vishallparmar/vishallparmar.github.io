@@ -75,6 +75,10 @@ h5 {
 	border-top: 5px solid #444444;
 }
 
+.headerDiv2{
+	border: none;
+}
+
 .quoteDiv {
 	text-align: center;
 	color: #444444 !important;
