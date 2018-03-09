@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	
 	$('#htmlBar').LineProgressbar({
 		percentage : 80,
 		height : '10px',
