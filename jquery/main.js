@@ -11,6 +11,12 @@ $(document).ready(function() {
 		radius : '0px',
 		fillBackgroundColor: '#444444'
 	});
+	$('#javaScriptBar').LineProgressbar({
+		percentage : 60,
+		height : '10px',
+		radius : '0px',
+		fillBackgroundColor: '#444444'
+	});
 	$('#jqueryBar').LineProgressbar({
 		percentage : 65,
 		height : '10px',
