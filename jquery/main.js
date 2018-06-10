@@ -24,6 +24,12 @@ $(document).ready(function() {
 		radius : '0px',
 		fillBackgroundColor: '#444444'
 	});
+	$('#angularBar').LineProgressbar({
+		percentage : 65,
+		height : '10px',
+		radius : '0px',
+		fillBackgroundColor: '#444444'
+	});
 	$('#jsonBar').LineProgressbar({
 		percentage : 90,
 		height : '10px',
@@ -31,6 +37,18 @@ $(document).ready(function() {
 		fillBackgroundColor: '#444444'
 	});
 	$('#javaCBar').LineProgressbar({
+		percentage : 60,
+		height : '10px',
+		radius : '0px',
+		fillBackgroundColor: '#444444'
+	});
+	$('#springMvcBar').LineProgressbar({
+		percentage : 55,
+		height : '10px',
+		radius : '0px',
+		fillBackgroundColor: '#444444'
+	});
+	$('#hibernateBar').LineProgressbar({
 		percentage : 60,
 		height : '10px',
 		radius : '0px',
