@@ -87,6 +87,20 @@
         justify-content: center;
     }
 
+    .landing-container h2 {
+        font-size: 32px;
+    }
+
+    .landing-container h5 {
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .landing-container .rainbow-button {
+        font-size: 12px;
+        padding: 12px 30px;
+    }
+
     .black-container {
         background-color: #000000;
     }
@@ -101,6 +115,61 @@
 
     .skyblue-container {
         background-color: #1FE1E9;
+        max-height: 620px;
+    }
+
+    .skyblue-container .cust-row {
+        margin-top: 70px;
+    }
+
+    .skyblue-container .speaker-div {
+        top: -60px;
+        left: -30px;
+    }
+
+    .skyblue-container .speaker1 {
+        background-image: url(images/smallspeaker1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 284px;
+
+    }
+
+    .skyblue-container .speaker2 {
+        background-image: url(images/smallspeaker2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 284px;
+        top: -130px;
+        left: 50px;
+
+    }
+
+    .red-container .cust-row .sound-text {
+        margin-top: 100px;
+    }
+
+    .red-container .cust-row .speaker-div {
+        margin-bottom: 100px;
+    }
+
+    .red-container .cust-row .speaker-div .speaker1 {
+        background-image: url(images/bigspeaker1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 258px;
+    }
+
+    .red-container .cust-row .speaker-div .speaker2 {
+        background-image: url(images/bigspeaker2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 258px;
+        top: 100px;
     }
 
     .skyblue-container p,
@@ -288,6 +357,10 @@
         margin-bottom: 45px !important;
     }
 
+    .footer-email-text i {
+        margin-right: 15px;
+    }
+
     .copyright-text {
         font-size: 12px !important;
         text-transform: capitalize;
@@ -364,7 +437,7 @@
             </div>
         </div>
         <div class="row cust-row">
-            <div class="col-sm-12 col-md-8 col-lg-8 sound-col">
+            <div class="col-sm-12 col-md-7 col-lg-7 sound-col sound-text">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12">
                         <p class="reviews text-white">SUPERIOR SOUND</p>
@@ -377,8 +450,15 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-                <span>&nbsp;</span>
+            <div class="col-sm-12 col-md-5 col-lg-5 speaker-div">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6 speaker1">
+                        <span>&nbsp;</span>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 speaker2">
+                        <span>&nbsp;</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -454,10 +534,17 @@
             </div>
         </div>
         <div class="row cust-row">
-            <div class="col-sm-12 col-md-4 col-lg-4">
-                <span>&nbsp;</span>
+            <div class="col-sm-12 col-md-5 col-lg-5 speaker-div">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 speaker1">
+                        <span>&nbsp;</span>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 speaker2">
+                        <span>&nbsp;</span>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-8 col-lg-8">
+            <div class="col-sm-12 col-md-7 col-lg-7">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12">
                         <p class="reviews text-white">REVIEWS</p>
@@ -507,8 +594,7 @@
         class="jumbotron container-specifications container-footer-specifications text-center purple-container text-white">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
-                <p class="footer-email-text"><i class="fa fa-envelope" aria-hidden="true"
-                        style="margin-right: 15px;"></i>support@experienceconcerts.co</p>
+                <p class="footer-email-text"><i class="fa fa-envelope" aria-hidden="true"></i>support@experienceconcerts.co</p>
                 <p class="expicon-text">EXP<span class="expicon-i"></span>CON</p>
                 <p class="copyright-text">2019 &#169; All Rights Reserved &#124; Speer Technologies Incorporated</p>
             </div>
