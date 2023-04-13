@@ -1,3 +1,41 @@
+const blogs = {
+  "blog1" : {
+    "image" : "<img src='images/post-one.jpg' alt='blog'>",
+    "date" : "8 Jun,20",
+    "heading" : "Craving to Travel",
+    "content" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo, alias iusto rerum quas velit obcaecati, provident porro magni"
+  },
+  "blog2" : {
+    "image" : "<img src='images/post-two.jpg' alt='blog'>",
+    "date" : "16 Jan,20",
+    "heading" : "Nature Heals Itself",
+    "content" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo, alias iusto rerum quas velit obcaecati, provident porro magni"
+  },
+  "blog3" : {
+    "image" : "<img src='images/post-three.jpg' alt='blog'>",
+    "date" : "30 Nov,19",
+    "heading" : "Caffeine Addict",
+    "content" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo, alias iusto rerum quas velit obcaecati, provident porro magni"
+  },
+  "blog4" : {
+    "image" : "<img src='images/post-four.jpg' alt='blog'>",
+    "date" : "4 Oct,19",
+    "heading" : "The Perfect Pose",
+    "content" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo, alias iusto rerum quas velit obcaecati, provident porro magni"
+  },
+  "blog5" : {
+    "image" : "<img src='images/post-five.jpg' alt='blog'>",
+    "date" : "19 Sep,19",
+    "heading" : "Work From Home",
+    "content" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo, alias iusto rerum quas velit obcaecati, provident porro magni"
+  }
+  ,"blog6" : {
+    "image" : "<img src='images/post-six.jpg' alt='blog'>",
+    "date" : "6 Jun,19",
+    "heading" : "Stay Fit",
+    "content" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo, alias iusto rerum quas velit obcaecati, provident porro magni"
+  }
+}
 $(window).load(function(){
   var loader = document.getElementById('loader');
   setTimeout(function(){
@@ -42,6 +80,7 @@ $(function(){
    $('.about-close').hover(cursorhover,cursor);
    $('.project-close').hover(cursorhover,cursor);
    $('.blogs-close').hover(cursorhover,cursor);
+   $('.single-blogs-close').hover(cursorhover,cursor);
    $('.gallery-close').hover(cursorhover,cursor);
    $('.contact-close').hover(cursorhover,cursor);
    $('.imgs').hover(cursorhover,cursor);
@@ -118,6 +157,23 @@ $(function(){
 })
 $(function(){
 
+  const content = document.getElementById("single-blogs-content");
+  let currentPos = window.pageYOffset;
+
+  const callDistort = function () {
+      const newPos = window.pageYOffset;
+      const diff = newPos - currentPos;
+      const speed = diff * 0.2;
+
+      content.style.transform = "skewY(" + speed + "deg)";
+      currentPos = newPos;
+      requestAnimationFrame(callDistort);
+  };
+
+  callDistort();
+})
+$(function(){
+
   const content = document.getElementById("project-content");
   let currentPos = window.pageYOffset;
 
@@ -161,6 +217,7 @@ $(function(){
   $('#navigation').hover(cursorcolor,cursorcolorblack);
   $('#projects').hover(cursorcolor,cursorcolorblack);
   $('#blogs').hover(cursorcolor,cursorcolorblack);
+  $('#single-blogs').hover(cursorcolor,cursorcolorblack);
   $('#contact').hover(cursorcolor,cursorcolorblack);
   $('#gallery').hover(cursorcolor,cursorcolorblack);
 
@@ -243,6 +300,39 @@ $(function(){
     gsap.to('.blogs-opacity',.5,{opacity:1,stagger:.3,delay:2.5})
 
   })
+  $('.single-blogs-link').on('click',function(){
+    let blog = blogs["blog"+$(this).data("blog")];
+    gsap.to('#single-blogs',.2,{height:"100vh",overflow:"hidden"})
+    gsap.to('#navigation',.5,{y:"100%",delay:.5})
+    gsap.to('.navigation-links',.5,{opacity:0})
+    gsap.to('.navigation-close',.5,{opacity:0})
+    gsap.to('.logo',.5,{opacity:0})
+    gsap.to('.nav-li',.5,{opacity:0,stagger:.1})
+    gsap.to('#home',.5,{scale:.8,delay:1})
+    gsap.to('#home',.5,{x:"-100%",delay:1.5})
+    gsap.to('#single-blogs',0,{display:"block",delay:1})
+    gsap.to('#home',.7,{delay:.3,y:"0%"})
+    gsap.to('#single-blogs',0,{scale:.8,delay:.5})
+    gsap.to('#single-blogs',.5,{x:0,delay:1.5})
+    gsap.to('#single-blogs',.5,{scale:1,delay:2})
+    gsap.to('#single-blogs',1,{height:"auto",delay:2.5})
+
+    $('#single-blog-img').html(blog["image"]);
+    $('#single-blog-date').html(blog["date"]);
+    $('#single-blog-heading').html(blog["heading"]);
+    $('#single-blog-content').html(blog["content"]);
+    gsap.to('.single-blogs-opacity',.5,{opacity:1,stagger:.3,delay:2.5})
+
+    /** Also do all the steps of closing a blog list */
+
+    gsap.to('#blogs',.2,{height:"100vh",overflow:"hidden"})
+    gsap.to('#blogs',0,{display:"none",delay:1})
+    gsap.to('#blogs',.5,{scale:.8,delay:0})
+    gsap.to('#blogs',.5,{x:"100%",delay:.5})
+    gsap.to('#blogs',.5,{scale:1,delay:1})
+    gsap.to('.blogs-opacity',.5,{opacity:0,stagger:0,delay:.3})
+
+  })
   $('.contact-link').on('click',function(){
     gsap.to('#contact',.2,{height:"100vh",overflow:"hidden"})
     gsap.to('#navigation',.5,{y:"100%",delay:.5})
@@ -306,6 +396,30 @@ $(function(){
     gsap.to('#home',.5,{x:0,delay:.5})
     gsap.to('#home',.5,{scale:1,delay:1})
     gsap.to('.blogs-opacity',.5,{opacity:0,stagger:0,delay:.3})
+
+  })
+  $('.single-blogs-close').on('click',function(){
+    gsap.to('#single-blogs',.2,{height:"100vh",overflow:"hidden"})
+    gsap.to('#single-blogs',0,{display:"none",delay:1})
+    gsap.to('#single-blogs',.5,{scale:.8,delay:0})
+    gsap.to('#single-blogs',.5,{x:"100%",delay:.5})
+    gsap.to('#single-blogs',.5,{scale:1,delay:1})
+    gsap.to('#blogs',.2,{height:"100vh",overflow:"hidden"})
+    gsap.to('#navigation',.5,{y:"100%",delay:.5})
+    gsap.to('.navigation-links',.5,{opacity:0})
+    gsap.to('.navigation-close',.5,{opacity:0})
+    gsap.to('.logo',.5,{opacity:0})
+    gsap.to('.nav-li',.5,{opacity:0,stagger:.1})
+    gsap.to('#home',.5,{scale:.8,delay:1})
+    gsap.to('#home',.5,{x:"-100%",delay:1.5})
+    gsap.to('#blogs',0,{display:"block",delay:1})
+    gsap.to('#home',.7,{delay:.3,y:"0%"})
+    gsap.to('#blogs',0,{scale:.8,delay:.5})
+    gsap.to('#blogs',.5,{x:0,delay:1.5})
+    gsap.to('#blogs',.5,{scale:1,delay:2})
+    gsap.to('#blogs',1,{height:"auto",delay:2.5})
+    gsap.to('.blogs-opacity',.5,{opacity:1,stagger:.3,delay:2.5})
+    gsap.to('.single-blogs-opacity',.5,{opacity:0,stagger:0,delay:.3})
 
   })
   $('.contact-close').on('click',function(){
