@@ -467,6 +467,18 @@ $(function(){
   })
 })
 
+$('#submit').on('click',function(){
+  let subject = ($('#name').val() + " - " + $('#subject').val()).replace(/\r\n|\r|\n/g, "%0D%0A");
+  let body = ($('#body').val()).replace(/\r\n|\r|\n/g, "%0D%0A");;
+  window.open('mailto:parmar.vish3092@gmail.com?subject='+subject+'&body='+body);
+});
+
+$('#whatsapp').on('click',function(){
+  let text = ($('#name').val() + " - " + $('#subject').val()).replace(/\r\n|\r|\n/g, "%0D%0A");
+  let body = ($('#body').val()).replace(/\r\n|\r|\n/g, "%0D%0A");
+  window.open('https://wa.me/19024126393?text='+text+'%0D%0A'+body);
+});
+
 
 
   //CONTACT FORM (AFTER SUBMIT) 

@@ -848,7 +848,7 @@ a:hover {
 }
 
 .input-name {
-    width: 40%;
+    width: 84%;
     padding: 10px 20px;
     margin: 14px;
     border-radius: 8px;
@@ -893,6 +893,7 @@ a:hover {
     color: whitesmoke;
     font-family: poppins;
     font-size: 18px;
+    white-space: pre-wrap;
 }
 
 form button {
