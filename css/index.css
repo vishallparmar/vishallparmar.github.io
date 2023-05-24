@@ -739,16 +739,15 @@ a:hover {
 }
 
 .blog-image {
-    width: 100%;
-    height: auto;
+    height: 400px;
+    width: auto;
     position: relative;
     border-radius: 8px;
     overflow: hidden;
 }
 
 .single-blog-image {
-    width: 100%;
-    height: auto;
+    height: 500px;
     position: relative;
     border-radius: 8px;
     overflow: hidden;
@@ -1677,3 +1676,10 @@ form button:hover {
         filter: grayscale(0%);
     }
 }
+
+.blog-continue-link, .single-blog-extra-links {
+    color: dodgerblue !important;
+    font-style: italic;
+    cursor: pointer;
+}
+
