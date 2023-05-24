@@ -476,7 +476,7 @@ $('#submit').on('click',function(){
 $('#whatsapp').on('click',function(){
   let text = ($('#name').val() + " - " + $('#subject').val()).replace(/\r\n|\r|\n/g, "%0D%0A");
   let body = ($('#body').val()).replace(/\r\n|\r|\n/g, "%0D%0A");
-  window.open('https://wa.me/19024126393?text='+text+'%0D%0A'+body);
+  window.open('https://wa.me/19024126393?text='+text+'%0D%0A'+'\n'+body);
 });
 
 
