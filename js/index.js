@@ -99,7 +99,7 @@ $(window).load(function () {
     }
     gsap.to(imgholder, 1, { backgroundImage: `url('${imagesrc[index2]}')`, duration: 1 });
   }
-  setInterval(slideshowmobile, 5000);
+  // setInterval(slideshowmobile, 5000);
   //animation-on-scroll
   $(function () {
 
