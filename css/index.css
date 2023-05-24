@@ -761,6 +761,40 @@ a:hover {
     transition: all .4s ease;
 }
 
+@media (max-width: 300px) {
+    .blog-image {
+        height: 150px;
+        width: auto;
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    .single-blog-image {
+        height: 180px;
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width:301px) and (max-width:500px) {
+    .blog-image {
+        height: 250px;
+        width: auto;
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    .single-blog-image {
+        height: 300px;
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+}
+
 .single-blog-image img {
     width: 100%;
     position: relative;
