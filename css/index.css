@@ -1280,18 +1280,25 @@ form button:hover {
         background-attachment: fixed;
         width: 100%;
         height: 100vh;
-        transition: all 1s ease;
-        animation-name: profilepicanim;
-        animation-duration: 10s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
+        animation: profilepicanim 10s ease infinite alternate;
+        -ms-animation: profilepicanim 10s ease infinite alternate;
+        -webkit-animation: profilepicanim 10s ease infinite alternate;
+        -moz-animation: profilepicanim 10s ease infinite alternate;
     }
 
     @keyframes profilepicanim {
-        0%   {background-image: url('../images/profile/profile1.jpg');}
-        50%  {background-image: url('../images/profile/profile2.jpg');}
-        100%  {background-image: url('../images/profile/profile3.jpg');}
-      }
+        0% {
+            background-image: url('../images/profile/profile1.jpg');
+        }
+
+        50% {
+            background-image: url('../images/profile/profile2.jpg');
+        }
+
+        100% {
+            background-image: url('../images/profile/profile3.jpg');
+        }
+    }
 
     .main-home-pic::after {
         content: "";
@@ -1482,7 +1489,7 @@ form button:hover {
         border-radius: 8px;
         overflow: hidden;
     }
-    
+
     .single-blog-image {
         height: 180px;
         position: relative;
@@ -1548,17 +1555,25 @@ form button:hover {
         background-attachment: fixed;
         width: 100%;
         height: 100vh;
-        animation-name: profilepicanim;
-        animation-duration: 10s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
+        animation: profilepicanim 10s ease infinite alternate;
+        -ms-animation: profilepicanim 10s ease infinite alternate;
+        -webkit-animation: profilepicanim 10s ease infinite alternate;
+        -moz-animation: profilepicanim 10s ease infinite alternate;
     }
 
     @keyframes profilepicanim {
-        0%   {background-image: url('../images/profile/profile1.jpg');}
-        50%  {background-image: url('../images/profile/profile2.jpg');}
-        100%  {background-image: url('../images/profile/profile3.jpg');}
-      }
+        0% {
+            background-image: url('../images/profile/profile1.jpg');
+        }
+
+        50% {
+            background-image: url('../images/profile/profile2.jpg');
+        }
+
+        100% {
+            background-image: url('../images/profile/profile3.jpg');
+        }
+    }
 
     .main-home-pic::after {
         content: "";
@@ -1717,7 +1732,7 @@ form button:hover {
         border-radius: 8px;
         overflow: hidden;
     }
-    
+
     .single-blog-image {
         height: 300px;
         position: relative;
@@ -1726,9 +1741,9 @@ form button:hover {
     }
 }
 
-.blog-continue-link, .single-blog-extra-links {
+.blog-continue-link,
+.single-blog-extra-links {
     color: dodgerblue !important;
     font-style: italic;
     cursor: pointer;
 }
-
