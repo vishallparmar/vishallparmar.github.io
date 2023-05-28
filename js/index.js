@@ -3,19 +3,24 @@ const blogs = {
     "image": "<img src='images/blogs/blog1.jpg' alt='blog1'>",
     "date": "20 May, 2023",
     "heading": "The First Shoot",
-    "content": "Well, well, well! I literally willed this opportunity into my Life. I've always desired to be in front of the camera for commercial purposes, rather than just capturing my personal travels or other casual moments. I reached out to numerous photographers in Halifax (the city where I embarked on this journey), to collaborate, and fortunately, I had my first photo session with the talented and wonderful photographer, Blair.<br><br>The night before the shoot, for reasons known only to me, I couldn't sleep a wink. On the day of the shoot, even though the studio was only a 25-minute drive from my home, I ended up driving for nearly an hour because I missed an exit on the highway :( making me late for my first ever professional shoot. Anyway, once I finally arrived at the studio, Blair and I discussed my outfits and carefully selected combinations to create visually captivating images. Believe it or not, this shoot turned out to be a no-makeup, apparently the photographer thought I had good natural skin, so makeup was unnecessary. As for my hair, Blair, being a photographer and makeup artist but unfortunately not a hairstylist, had to work with my hair as it was but surprisingly, the results turned out quite well.<br><br>After just 10 minutes of planning, I immediately began changing outfits and facing the camera. It's sort of comical that the man behind lens thought I had prior modeling experience because of my natural posing ability for which by the way I did plethora of study. We managed to shoot more than five outfits in just an hour, which I thought was impressive considering it was my first time.<br><br>Overall, it was a great learning experience for me. I not only learned a lot about the technical aspects of shooting but also gained insights into the fashion and modeling industry as a whole, thanks to Blair's guidance. I took note of some valuable tips from him to apply in the future assignments, and then I wrapped up for the day. This time, I drove back home without missing any exits :) quite pleased with myself.<br><br>By the way, if you're interested, you can check out my Instagram for behind-the-scenes content from this shoot. I've provided a few links below to specific posts, each with its own context.",
+    "content": "Well, well, well! I literally willed this opportunity into my Life. I've always desired to be in front of the camera for commercial purposes, rather than just capturing my personal travels or other casual moments. I reached out to numerous photographers in Halifax (the city where I embarked on this journey), to collaborate, and fortunately, I had my first photo session with the talented and wonderful photographer, Blair.<br><br>The night before the shoot, for reasons known only to me, I couldn't sleep a wink. On the day of the shoot, even though the studio was only a 25-minute drive from my home, I ended up driving for nearly an hour because I missed an exit on the highway :( making me late for my first ever professional shoot. Anyway, once I finally arrived at the studio, Blair and I discussed my outfits and carefully selected combinations to create visually captivating images. Believe it or not, this shoot turned out to be a no-makeup, apparently the photographer thought I had good natural skin, so makeup was unnecessary. As for my hair, Blair, being a photographer and makeup artist but unfortunately not a hairstylist, had to work with my hair as it was but surprisingly, the results turned out quite well.<br><br>After just 10 minutes of planning, I immediately began changing outfits and facing the camera. It's sort of comical that the man behind lens thought I had prior modeling experience because of my natural posing ability for which by the way I did plethora of study. We managed to shoot more than five outfits in just an hour, which I thought was impressive considering it was my first time.<br><br>Overall, it was a great learning experience for me. I not only learned a lot about the technical aspects of shooting but also gained insights into the fashion and modeling industry as a whole, thanks to Blair's guidance. I took note of some valuable tips from him to apply in the future assignments, and then I wrapped up for the day. This time, I drove back home without missing any exits :) quite pleased with myself.<br><br>Thanks for dropping by :) Have a great rest of your time!",
     "links": [
-      {
-        "context" : "Photographer",
-        "link" : "https://www.instagram.com/beaubyblair"
-      },
-      {
-        "context" : "Shoot BTS Reel",
-        "link" : "https://www.instagram.com/reel/Ck3dAUWOFFV/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="
-      }
     ]
   }
 }
+
+// Links example
+// "links": [
+//   {
+//     "context" : "Photographer",
+//     "link" : "https://www.instagram.com/beaubyblair"
+//   },
+//   {
+//     "context" : "Shoot BTS Reel",
+//     "link" : "https://www.instagram.com/reel/Ck3dAUWOFFV/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="
+//   }
+// ]
+
 $(window).load(function () {
   var loader = document.getElementById('loader');
   setTimeout(function () {

@@ -1483,7 +1483,7 @@ form button:hover {
     }
 
     .blog-image {
-        height: 150px;
+        height: 190px;
         width: auto;
         position: relative;
         border-radius: 8px;
@@ -1491,7 +1491,7 @@ form button:hover {
     }
 
     .single-blog-image {
-        height: 180px;
+        height: 200px;
         position: relative;
         border-radius: 8px;
         overflow: hidden;
@@ -1726,7 +1726,7 @@ form button:hover {
     }
 
     .blog-image {
-        height: 250px;
+        height: 230px;
         width: auto;
         position: relative;
         border-radius: 8px;
@@ -1734,7 +1734,7 @@ form button:hover {
     }
 
     .single-blog-image {
-        height: 300px;
+        height: 380px;
         position: relative;
         border-radius: 8px;
         overflow: hidden;
